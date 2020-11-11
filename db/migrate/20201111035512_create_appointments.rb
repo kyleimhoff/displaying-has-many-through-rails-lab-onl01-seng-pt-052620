@@ -1,6 +1,10 @@
 class CreateAppointments < ActiveRecord::Migration[5.0]
   def change
     create_table :appointments do |t|
+      t.datetime :appointment_time 
+      t.belongs_to :patient 
+      t.belongs_to :doctor 
+      
     end
   end
 end
