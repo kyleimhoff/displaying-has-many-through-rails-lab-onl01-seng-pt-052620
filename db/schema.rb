@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 20201111035512) do
 
   create_table "appointments", force: :cascade do |t|
-    t.datetime "appointment_time"
+    t.datetime "appointment_datetime"
     t.integer  "patient_id"
     t.integer  "doctor_id"
     t.index ["doctor_id"], name: "index_appointments_on_doctor_id"
