@@ -1,4 +1,4 @@
-class Appointment < ApplicationRecord 
+class Appointment < ApplicationRecord
   belongs_to :patient
   belongs_to :doctor
   def doctor_name=(name)
